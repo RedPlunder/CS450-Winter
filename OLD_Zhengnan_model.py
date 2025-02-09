@@ -9,7 +9,7 @@ import os
 os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 
 # Set your OpenAI API key
-openai.api_key = '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'
+# openai.api_key = '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'
 
 # Load tokenizer and model for embedding
 tokenizer = AutoTokenizer.from_pretrained("sentence-transformers/all-MiniLM-L12-v2")
