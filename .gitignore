@@ -1,2 +1,5 @@
 # Ignore everything inside the "dataset" directory
 /dataset/
+
+# ignore macos trash
+.DS_Store
