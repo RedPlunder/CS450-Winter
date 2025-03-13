@@ -12,12 +12,14 @@
 
 ### **🧪 Tests Overview**
 #### **Dataset: 784 Structured**
-| Test | RAG Version | Re-ranking Method | Prompt Version |
-|------|------------|-------------------|---------------|
-| **Baseline** | No RAG | No re-ranking | No prompt |
-| **test#1** | RAG 1.0 | No tag-based re-ranking | Prompt 3.0 |
-| **test#2** | RAG 2.0 | **Method 1: Re-ranking by frequency of the tags** | Prompt 3.0 |
-| **test#3** | RAG 2.0 | **Method 2: Re-ranking by tag similarity** | Prompt 3.0 |
+| Test     | RAG Version | Re-ranking Method                                      | Prompt Version |
+|----------|------------|--------------------------------------------------------|---------------|
+| **Baseline** | No RAG     | No re-ranking                                        | No prompt    |
+| **test#1**   | RAG 1.0    | No tag-based re-ranking                              | Prompt 3.0   |
+| **test#2**   | RAG 2.0    | **Method 1: Re-ranking by frequency of the tags**    | Prompt 3.0   |
+| **test#3**   | RAG 2.0    | **Method 2: Re-ranking by tag similarity**          | Prompt 3.0   |
+| **test#4**   | RAG 2.0    | **Method 1: Re-ranking by frequency of the tags**    | Prompt 4.0   |
+| **test#5**   | RAG 2.0    | **Method 2: Re-ranking by tag similarity**          | Prompt 4.0   |
 
 ---
 
@@ -27,6 +29,7 @@
 | **Prompt 1.0** | Jack's old prompt (Fall 2024) – **broken** |
 | **Prompt 2.0** | Non-XML format, includes **step-by-step reasoning** |
 | **Prompt 3.0** | Uses **XML format**, only generates **YAML output**, no step-by-step |
+| **Prompt 4.0** | Based on 3.0, goal is to improve **faithfulness**, making sure LLM answer strictly follows RAG retrieved results |
 
 ---
 
