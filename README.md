@@ -12,14 +12,16 @@
 
 ### **🧪 Tests Overview**
 #### **Dataset: 784 Structured**
-| Test     | RAG Version | Re-ranking Method                                      | Prompt Version |
-|----------|------------|--------------------------------------------------------|---------------|
+| Test       | RAG Version | Re-ranking Method                                      | Prompt Version |
+|------------|------------|--------------------------------------------------------|---------------|
 | **Baseline** | No RAG     | No re-ranking                                        | No prompt    |
 | **test#1**   | RAG 1.0    | No tag-based re-ranking                              | Prompt 3.0   |
 | **test#2**   | RAG 2.0    | **Method 1: Re-ranking by frequency of the tags**    | Prompt 3.0   |
 | **test#3**   | RAG 2.0    | **Method 2: Re-ranking by tag similarity**          | Prompt 3.0   |
 | **test#4**   | RAG 2.0    | **Method 1: Re-ranking by frequency of the tags**    | Prompt 4.0   |
 | **test#5**   | RAG 2.0    | **Method 2: Re-ranking by tag similarity**          | Prompt 4.0   |
+| **test#6**   | RAG 2.0    | **Method 1: Re-ranking by frequency of the tags**    | Prompt 4.1   |
+| **test#7**   | RAG 2.0    | **Method 2: Re-ranking by tag similarity**          | Prompt 4.1   |
 
 ---
 
@@ -30,6 +32,7 @@
 | **Prompt 2.0** | Non-XML format, includes **step-by-step reasoning** |
 | **Prompt 3.0** | Uses **XML format**, only generates **YAML output**, no step-by-step |
 | **Prompt 4.0** | Enhances **faithfulness**, ensuring responses strictly follow RAG-retrieved knowledge with no external reasoning. It enforces **Localization → Reasoning → Remediation → Verification**, mandates YAML output, and includes a fallback mechanism for incomplete retrievals. This design is informed by [this paper](https://arxiv.org/pdf/2502.02009). |
+| **Prompt 4.1** | *(TBD – Description to be added)* |
 
 ---
 
