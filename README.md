@@ -29,7 +29,7 @@
 | **Prompt 1.0** | Jack's old prompt (Fall 2024) – **broken** |
 | **Prompt 2.0** | Non-XML format, includes **step-by-step reasoning** |
 | **Prompt 3.0** | Uses **XML format**, only generates **YAML output**, no step-by-step |
-| **Prompt 4.0** | Based on 3.0, goal is to improve **faithfulness**, making sure LLM answer strictly follows RAG retrieved results |
+| **Prompt 4.0** | Enhances **faithfulness**, ensuring responses strictly follow RAG-retrieved knowledge with no external reasoning. It enforces **Localization → Reasoning → Remediation → Verification**, mandates YAML output, and includes a fallback mechanism for incomplete retrievals. This design is informed by [this paper](https://arxiv.org/pdf/2502.02009). |
 
 ---
 
