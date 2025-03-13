@@ -32,7 +32,7 @@
 | **Prompt 2.0** | Non-XML format, includes **step-by-step reasoning** |
 | **Prompt 3.0** | Uses **XML format**, only generates **YAML output**, no step-by-step |
 | **Prompt 4.0** | Enhances **faithfulness**, ensuring responses strictly follow RAG-retrieved knowledge with no external reasoning. It enforces **Localization → Reasoning → Remediation → Verification**, mandates YAML output, and includes a fallback mechanism for incomplete retrievals. This design is informed by [this paper](https://arxiv.org/pdf/2502.02009). |
-| **Prompt 4.1** | *(TBD – Description to be added)* |
+| **Prompt 4.1** | Strengthens **fallback strategy** to handle missing or incomplete retrievals and improves output verification to ensure YAML is valid and follows API specs. More robust error handling for better reliability. |
 
 ---
 
