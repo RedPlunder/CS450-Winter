@@ -14,7 +14,7 @@
 #### **Dataset: 784 Structured**
 | Test       | RAG Version | Re-ranking Method                                      | Prompt Version |
 |------------|------------|--------------------------------------------------------|---------------|
-| **Baseline** | No RAG     | No re-ranking                                        | No prompt    |
+| **Baseline (test#0)** | No RAG     | No re-ranking                                        | No prompt    |
 | **test#1**   | RAG 1.0    | No tag-based re-ranking                              | Prompt 3.0   |
 | **test#2**   | RAG 2.0    | **Method 1: Re-ranking by frequency of the tags**    | Prompt 3.0   |
 | **test#3**   | RAG 2.0    | **Method 2: Re-ranking by tag similarity**          | Prompt 3.0   |
