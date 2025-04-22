@@ -21,6 +21,11 @@ rag_data['Content'] = rag_data['Content'].str.lower()
 documents = rag_data['Content'].tolist()
 doc_ids = rag_data['ID'].tolist()
 
+print(documents.notnull())
+print(type(documents))
+
+exit(0)
+
 llm_choice = "gpt"
 openai.api_key = os.environ["OPENAI_API_KEY"]
 
@@ -77,10 +82,11 @@ def main():
 
     doc_embeddings = np.vstack(doc_embeddings)
     
-    # 保存结果（建议使用parquet格式节省空间）
+    # 保存结果（建议使用 parquet 格式节省空间）
     np.save(embeddings_path, doc_embeddings)  # Save embeddings to disk
 
-    print(f"处理完成！有效embedding数量：{documents.notnull().sum()}/{len(documents)}")
+    # print(f"处理完成！有效embedding数量：{doc_embeddings.notnull().sum()}/{len(doc_embeddings)}")
+    print(f"处理完成！")
 
 if __name__ == "__main__":
     main()
